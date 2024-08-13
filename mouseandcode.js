@@ -34,6 +34,34 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
         const newPage = await launchBrowserAndNavigateToDocument(); // Ensure this returns a newPage object
 
 
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        await waitForEnter();
+        const extensionID = 'div[data-id="tmaNxu0Qh1QsjhVV"]'; // Replace with the appropriate selector
+        const extensionTitle = 'Sketch 3'; // Replace with the desired title
+        console.log('Right-clicking on the specified element.');
+        const extensionOption1 = await performRightClickOptionByTitle(newPage, extensionID, extensionTitle);
+        console.log("NNNNNNNNNNN");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("OOOOOOOOOOO");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        copySketchFunction(extensionOption1, newPage);
+        // Select sketch to click or unclick, good code to select and unselect
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
         //Working on (2) Extrude 1(4.00)
         ////////////////////////////////////////////////////////////////////////////
         const selector = 'div[data-id="XgmGAQ7RqnVg1wa8"]'; // Replace with the appropriate selector
@@ -308,6 +336,71 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
         editIntoSketchFunction(editOptions13, newPage);
 
 
+        console.log("GGGGGGGGGGG");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        await selectOkButton(newPage);
+        console.log("HHHHHHHHHHH");
+        console.log(''); // This logs an empty line, effectively skipping a line
+
+
+
+
+
+
+
+        //////TEST CODE
+
+        // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // const extensionID = 'div[data-id="tmaNxu0Qh1QsjhVV"]'; // Replace with the appropriate selector
+        // const extensionTitle = 'Sketch 3'; // Replace with the desired title
+        // console.log('Right-clicking on the specified element.');
+        // const extensionOption1 = await performRightClickOptionByTitle(newPage, extensionID, extensionTitle);
+        // console.log("NNNNNNNNNNN");
+        // console.log(''); // This logs an empty line, effectively skipping a line
+        // await waitForEnter();
+        // console.log("OOOOOOOOOOO");
+        // console.log(''); // This logs an empty line, effectively skipping a line
+        // copySketchFunction(extensionOption1, newPage);
+        // // Select sketch to click or unclick, good code to select and unselect
+        // await waitForEnter();
+
+
+
+        // const title20 = '(3) Extrude Sketch(1.03)'; // Replace with the desired title
+        // const editOptions20 = await performRightClickOptionByTitle(newPage, selector7, title20);
+        // //Testing code
+        // console.log("PPPPPPPPPP");
+        // console.log(''); // This logs an empty line, effectively skipping a line
+        // await waitForEnter();
+        // console.log("QQQQQQQQQQ");
+        // console.log(''); // This logs an empty line, effectively skipping a line
+        // pasteIntoSketchFunction(editOptions20, newPage);
+        // ////////////////////////////////////////////////////////////////////////////
+        // await waitForEnter();
+        // // console.log("Before editIntoSketchFunction");
+        // const title21 = '(3) Extrude Sketch(1.03)'; // Replace with the desired title
+        // const editOptions21 = await performRightClickOptionByTitle(newPage, selector7, title21);
+        // editIntoSketchFunction(editOptions21, newPage);
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -322,6 +415,16 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
         console.log("ExtensionLeft");
         await waitForEnter();
         ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
 
 
         //Seecting the tabs EXTENSIONS RIGHT
@@ -347,6 +450,25 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
         console.log("ExtensionLeft");
         await waitForEnter();
         ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
