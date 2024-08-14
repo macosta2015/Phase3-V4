@@ -321,6 +321,11 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
 
 
 
+
+
+
+
+
         //////TEST CODE
 
 
@@ -337,15 +342,7 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
         ////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
-
-
-
-
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        await waitForEnter();
         const extensionID = 'div[data-id="tmaNxu0Qh1QsjhVV"]'; // Replace with the appropriate selector
         const extensionTitle = 'Sketch 3'; // Replace with the desired title
         console.log('Right-clicking on the specified element.');
