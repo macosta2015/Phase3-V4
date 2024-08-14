@@ -379,6 +379,7 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
 
 
 
+        
         ///////TEST CODE
         ////////////////////////////////////////////////////////////////////////////
         console.log("CCCCCCCCCC");
@@ -400,6 +401,8 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
         console.log("GGGGGGGGGG");
         console.log(''); // This logs an empty line, effectively skipping a line
         await waitForEnter();
+        await selectOkButton(newPage);
+
 
 
 
