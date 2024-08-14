@@ -357,10 +357,10 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        // Selecting the tabs EXTENSIONS RIGHT
+        // Selecting the tabs EXTENSIONS ORIGINAL
         ////////////////////////////////////////////////////////////////////////////
         const selectorTabs4 = 'tab-list-item.os-tab-bar-tab[data-id="b57706972c3fd6f8b33ab7d3"][data-icon-src="partstudio"]';
-        console.log("extension Right ");
+        console.log("extension ORIGINAL ");
         console.log(''); // This logs an empty line, effectively skipping a line
         await waitForEnter();
 
@@ -369,10 +369,90 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
         } catch (error) {
             console.error("Failed to execute extensionleftANDright:", error);
         }
-
         await waitForEnter();
         ////////////////////////////////////////////////////////////////////////////
                 
+
+
+
+
+
+
+
+        ///////TEST CODE
+        ////////////////////////////////////////////////////////////////////////////
+        console.log("CCCCCCCCCC");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("DDDDDDDDDD");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        const selector31 = 'div[data-id="Dg4JdGx6jlZTm4XD"]'; // Replace with the appropriate selector
+        const title31 = '(1) Initial Sketch'; // Replace with the desired title
+        const editOptions31 = await performRightClickOptionByTitle(newPage, selector31, title31);
+        console.log("EEEEEEEEEE");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("FFFFFFFFFF");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        editIntoSketchFunction(editOptions31, newPage);
+        ////////////////////////////////////////////////////////////////////////////
+
+        console.log("GGGGGGGGGG");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //Seecting the tabs EXTENSIONS ORIGINAL
         ////////////////////////////////////////////////////////////////////////////
