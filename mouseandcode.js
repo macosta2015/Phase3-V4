@@ -36,32 +36,6 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
 
 
 
-
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        await waitForEnter();
-        const extensionID = 'div[data-id="tmaNxu0Qh1QsjhVV"]'; // Replace with the appropriate selector
-        const extensionTitle = 'Sketch 3'; // Replace with the desired title
-        console.log('Right-clicking on the specified element.');
-        const extensionOption1 = await performRightClickOptionByTitle(newPage, extensionID, extensionTitle);
-        console.log("NNNNNNNNNNN");
-        console.log(''); // This logs an empty line, effectively skipping a line
-        await waitForEnter();
-        console.log("OOOOOOOOOOO");
-        console.log(''); // This logs an empty line, effectively skipping a line
-        copySketchFunction(extensionOption1, newPage);
-        // Select sketch to click or unclick, good code to select and unselect
-        await waitForEnter();
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
         //Working on (2) Extrude 1(4.00)
         ////////////////////////////////////////////////////////////////////////////
         const selector = 'div[data-id="XgmGAQ7RqnVg1wa8"]'; // Replace with the appropriate selector
@@ -347,10 +321,44 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
 
 
 
-
-
         //////TEST CODE
 
+
+        //Seecting the tabs EXTENSIONS LEFT
+        ////////////////////////////////////////////////////////////////////////////
+        const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="e30941a9804ec64336179006"][data-icon-src="partstudio"]';
+        // const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
+        console.log("ExtensionLeft ");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        await ExtensionLeft(newPage, selectorTabs2);
+        console.log("ExtensionLeft");
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        await waitForEnter();
+        const extensionID = 'div[data-id="tmaNxu0Qh1QsjhVV"]'; // Replace with the appropriate selector
+        const extensionTitle = 'Sketch 3'; // Replace with the desired title
+        console.log('Right-clicking on the specified element.');
+        const extensionOption1 = await performRightClickOptionByTitle(newPage, extensionID, extensionTitle);
+        console.log("NNNNNNNNNNN");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("OOOOOOOOOOO");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        copySketchFunction(extensionOption1, newPage);
+        // Select sketch to click or unclick, good code to select and unselect
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // const extensionID = 'div[data-id="tmaNxu0Qh1QsjhVV"]'; // Replace with the appropriate selector
         // const extensionTitle = 'Sketch 3'; // Replace with the desired title
@@ -406,14 +414,14 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
 
         //Seecting the tabs EXTENSIONS LEFT
         ////////////////////////////////////////////////////////////////////////////
-        const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="e30941a9804ec64336179006"][data-icon-src="partstudio"]';
-        // const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
-        console.log("ExtensionLeft ");
-        console.log(''); // This logs an empty line, effectively skipping a line
-        await waitForEnter();
-        await ExtensionLeft(newPage, selectorTabs2);
-        console.log("ExtensionLeft");
-        await waitForEnter();
+        // const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="e30941a9804ec64336179006"][data-icon-src="partstudio"]';
+        // // const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
+        // console.log("ExtensionLeft ");
+        // console.log(''); // This logs an empty line, effectively skipping a line
+        // await waitForEnter();
+        // await ExtensionLeft(newPage, selectorTabs2);
+        // console.log("ExtensionLeft");
+        // await waitForEnter();
         ////////////////////////////////////////////////////////////////////////////
 
 
