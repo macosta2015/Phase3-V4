@@ -1,4 +1,4 @@
-// August 12th of 2024
+// August 15th of 2024
 
 const puppeteer = require('puppeteer');
 require('dotenv').config();
@@ -379,7 +379,7 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
 
 
 
-        
+
         ///////TEST CODE
         ////////////////////////////////////////////////////////////////////////////
         console.log("CCCCCCCCCC");
