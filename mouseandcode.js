@@ -371,13 +371,6 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
         }
         await waitForEnter();
         ////////////////////////////////////////////////////////////////////////////
-                
-
-
-
-
-
-
 
 
         ///////TEST CODE
@@ -409,21 +402,66 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
 
 
 
+        console.log("HHHHHHHHH");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+
+
+        // Selecting the tabs EXTENSIONS RIGHT
+        ////////////////////////////////////////////////////////////////////////////
+        const selectorTabs5 = 'tab-list-item.os-tab-bar-tab[data-id="a21ad6c852c19e9b77d5074d"][data-icon-src="partstudio"]';
+        console.log("extension EXTENSIONS RIGHT ");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+
+        try {
+            await extensionleftANDright(newPage, selectorTabs5);
+        } catch (error) {
+            console.error("Failed to execute extensionleftANDright:", error);
+        }
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////
 
 
 
 
 
+        ///////TEST CODE
+        ////////////////////////////////////////////////////////////////////////////
+        console.log("CCCCCCCCCC");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("DDDDDDDDDD");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        const selector32 = 'div[data-id="6zlB1MwSR4wHnGtm"]'; // Replace with the appropriate selector
+        const title32 = 'Sketch 2'; // Replace with the desired title
+        const editOptions32 = await performRightClickOptionByTitle(newPage, selector32, title32);
+        console.log("EEEEEEEEEE");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("FFFFFFFFFF");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        copySketchFunction(editOptions32, newPage);
+        ////////////////////////////////////////////////////////////////////////////
 
 
+        // Select sketch to click or unclick, good code to select and unselect
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Selecting the tabs EXTENSIONS ORIGINAL
+        ////////////////////////////////////////////////////////////////////////////
+        const selectorTabs6 = 'tab-list-item.os-tab-bar-tab[data-id="b57706972c3fd6f8b33ab7d3"][data-icon-src="partstudio"]';
+        console.log("extension ORIGINAL ");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
 
-
-
-
-
-
-
-
+        try {
+            await extensionleftANDright(newPage, selectorTabs6);
+        } catch (error) {
+            console.error("Failed to execute extensionleftANDright:", error);
+        }
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////
 
 
 
