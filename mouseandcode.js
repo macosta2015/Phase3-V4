@@ -465,6 +465,30 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
 
 
 
+        ///////TEST CODE
+        ////////////////////////////////////////////////////////////////////////////
+        console.log("CCCCCCCCCC");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("DDDDDDDDDD");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        const selector33 = 'div[data-id="Dg4JdGx6jlZTm4XD"]'; // Replace with the appropriate selector
+        const title33 = '(1) Initial Sketch'; // Replace with the desired title
+        const editOptions33 = await performRightClickOptionByTitle(newPage, selector33, title33);
+        console.log("EEEEEEEEEE");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        console.log("FFFFFFFFFF");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        editIntoSketchFunction(editOptions33, newPage);
+        ////////////////////////////////////////////////////////////////////////////
+
+        console.log("GGGGGGGGGG");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        await selectOkButton(newPage);
+
+
 
 
 
