@@ -912,7 +912,7 @@ const extensionleftANDright = require('./components/extensionleftANDright.js'); 
         console.log('Move the mouse over the page to see the coordinates...');
         await new Promise(resolve => setTimeout(resolve, 3000));
 
-        console.log('Script completed successfully.');
+        console.log('Script completed successfully. Thank you');
 
 
 
